@@ -1,0 +1,20 @@
+<h1 class="bride">-----Our Grooms-----</h1>
+<div class="brides-container">
+  <div class="card-grid">
+    <div class="card horizontal" *ngFor="let user of users">
+      <div class="card-image">
+        <img [src]="" alt="Card Image">
+      </div>
+      <div class="card-content">
+        <h2 class="card-title">{{ user.firstName }}</h2>
+        <ul>
+          <li>FIRST NAME: {{ user.firstName }} </li>
+          <li>LAST NAME: {{ user.lastName }} </li>
+          <li>AGE: {{ user.age }} Years</li>
+          <li>DATE OF BIRTH: {{ user.dateOfBirth }}</li>
+        </ul>
+        <a href="#" class="button">More Information</a>
+      </div>
+    </div>
+  </div>
+</div>
