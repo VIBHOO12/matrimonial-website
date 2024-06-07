@@ -7,7 +7,6 @@ import { FooterComponent } from './footer/footer.component';
 
 import { LoginComponent } from './userDetails/login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { RegisterComponent } from './userDetails/register/register.component';
 import { ForgotpasswordComponent } from './userDetails/forgotpassword/forgotpassword.component';
 import { ServiceComponent } from './websiteServices/service/service.component';
 import { DashboardComponent } from './userDetails/dashboard/dashboard.component';
@@ -33,7 +32,6 @@ import { withFetch } from '@angular/common/http';
 import { ROUTES, RouterModule } from '@angular/router';
 // import App from 'next/app';
 import { ResetPasswordComponent } from './userDetails/reset-password/reset-password.component';
-import { AdminComponent } from './admin/admin.component';
 import { LocationBookingComponent } from './location-booking/location-booking.component';
 import { GroomsComponent } from './websiteServices/grooms/grooms.component';
 import { BridesComponent } from './websiteServices/brides/brides.component';
@@ -43,6 +41,12 @@ import { ChatComponent } from './websiteServices/chat/chat.component';
 import { MessageComponent } from './message/message.component';
 import { DifferenciatorComponent } from './websiteServices/differenciator/differenciator.component';
 import { HomeComponent } from './home/home.component';
+import { AdminComponent } from './admin/admin.component';
+import { ContactDataComponent } from './adminComponent/contactdata/contactdata.component';
+import { RegistrationComponent } from './userDetails/registration/registration.component';
+import { RegistrationDataComponent } from './adminComponent/registration-data/registration-data.component';
+import { HelpComponent } from './profile/help/help.component';
+import { SettingsPrivacyComponent } from './profile/settings-privacy/settings-privacy.component';
 
 
 @NgModule({
@@ -53,7 +57,6 @@ import { HomeComponent } from './home/home.component';
     HomeComponent,
     LoginComponent,
     NavbarComponent,
-    RegisterComponent,
     ForgotpasswordComponent,
     ServiceComponent,
     DashboardComponent,
@@ -79,6 +82,13 @@ import { HomeComponent } from './home/home.component';
     ChatComponent,
     MessageComponent,
     DifferenciatorComponent,
+    ContactDataComponent,
+    RegistrationComponent,
+    RegistrationDataComponent,
+    HelpComponent,
+    SettingsPrivacyComponent,
+    
+
     
   ],
   imports: [
@@ -97,4 +107,4 @@ import { HomeComponent } from './home/home.component';
 })
 
 
-export class AppModule { }
+export class AppModule {}

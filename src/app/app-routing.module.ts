@@ -4,8 +4,6 @@ import { AngularFireModule } from '@angular/fire/compat'
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { LoginComponent } from './userDetails/login/login.component';
-import { RegisterComponent } from './userDetails/register/register.component';
-
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './mainAbout/about/about.component';
 import { ForgotpasswordComponent } from './userDetails/forgotpassword/forgotpassword.component';
@@ -34,10 +32,15 @@ import { ChatComponent } from './websiteServices/chat/chat.component';
 import { MessageComponent } from './message/message.component';
 import { DifferenciatorComponent } from './websiteServices/differenciator/differenciator.component';
 import { HomeComponent } from './home/home.component';
+import { ContactDataComponent } from './adminComponent/contactdata/contactdata.component';
+import { RegistrationComponent } from './userDetails/registration/registration.component';
+import { RegistrationDataComponent } from './adminComponent/registration-data/registration-data.component';
+import { HelpComponent } from './profile/help/help.component';
+import { SettingsPrivacyComponent } from './profile/settings-privacy/settings-privacy.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
+  { path: 'registration', component: RegistrationComponent },
   { path: '', component: LoginButtonComponent },
   { path: 'home', component: HomeComponent },
   { path: 'navbar', component: NavbarComponent },
@@ -63,7 +66,11 @@ const routes: Routes = [
   { path: 'location-booking', component: LocationBookingComponent},
   { path: 'brides', component: BridesComponent},
   { path: 'message', component: MessageComponent},
-  { path: 'differenciator', component: DifferenciatorComponent}
+  { path: 'differenciator', component: DifferenciatorComponent},
+  {path: 'contactdata', component:ContactDataComponent},
+  {path: 'registration-data', component: RegistrationDataComponent},
+  {path: 'help', component: HelpComponent},
+  { path: 'setting-privacy', component: SettingsPrivacyComponent}
 
 ];
 
