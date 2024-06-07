@@ -48,9 +48,9 @@ export class BrideInformationComponent  implements OnInit{
     this.user = history.state.user;
     this.loggedInUser = sessionStorage.getItem('loggedInUser');
   }
-  private serviceID: string = 'service_d8k2n6q';
-  private templateID: string = 'template_9uxrns7';
-  private userID: string = '3gAV4t6K5P39pdo6I';
+  private serviceID: string = 'service_6yo8lxn';
+  private templateID: string = 'template_ma5hek7';
+  private userID: string = 'tLJd5GoK1E28IX2W3';
     
 
     approveRequest() {

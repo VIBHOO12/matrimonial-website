@@ -52,21 +52,6 @@ export class MessageComponent implements OnInit {
     });
   }
 
-  // deleteUser(messageId: number): void {
-  //   console.log('Attempting to delete message with ID:', messageId); // Add this line for debugging
-  
-  //   this.chatService.deleteMessage(messageId).subscribe(
-  //     () => {
-  //       Swal.fire('Deleted!', 'Message has been deleted.', 'success');
-  //       this.removeLocalMessage(messageId); // Remove message from local list
-  //     },
-  //     error => {
-  //       Swal.fire('Error!', 'Error deleting message.', 'error');
-  //       console.error('Error deleting message:', error);
-  //     }
-  //   );
-  // }
-  
   removeLocalMessage(msgId: number): void {
     this.messages = this.messages.filter(message => message.msgId !== msgId);
   }

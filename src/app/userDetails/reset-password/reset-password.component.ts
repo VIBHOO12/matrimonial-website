@@ -78,7 +78,7 @@ export class ResetPasswordComponent implements OnInit{
           });
 
           // Redirect to the desired page
-          this.router.navigate(['login']);
+          this.router.navigate(['/login']);
         },
         (error) => {
           console.error('Error updating password:', error);
